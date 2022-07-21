@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="main.js"></script>
+        <title>Cambia Color</title>
+    </head>
+    <body onload="changeRndColor()">
+        <div class="container">
+
+            <div class="flex">
+                <input type="button" value="Random" id="rndButton"
+                    onclick="changeRndColor()">
+                <input type="text" value="#FFFFFF" id="txtField"
+                    oninput="changeColor()">
+            </div>
+            <div class="rgbControllers">
+                <input type="range" id="r" class="rgbController" oninput="changeRangerColor('rangerR')" min="00" max="99">
+                <input type="range" id="g" class="rgbController" oninput="changeRangerColor('rangerG')" min="00" max="99">
+                <input type="range" id="b" class="rgbController" oninput="changeRangerColor('rangerB')" min="00" max="99">
+
+            </div>
+        </div>
+    </body>
+</html>

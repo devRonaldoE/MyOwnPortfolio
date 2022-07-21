@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+
+
+    <body onload="main()">
+        <div class="container"> 
+            <input type="button" class="changeButton-calc" id="changeButton" onclick="change()">
+            <div class="childContainer">
+                
+            <div class="calcContainer-show" id="calcContainer">
+                <div class="row">
+                    <input type="textfield" class="calcText" id="calcMonitor" disabled="true">
+                    
+                </div>
+                <div class="row">
+                    <input type="button" value="AC" class="actionButton"  onclick="clears()"  title=" Click Para Limpiar">
+                    <input type="button" value="C" class="actionButton"  onclick="retro()"  title="Click Para Eliminar Ultimo Digito">
+                    <input type="button" value="Quejas" class="actionButton"  onclick="quejarse()"  title="Click Para Ver Ultimas 10 Operaciones">
+                </div>    
+                <div class="row">
+                    <input type="button" value="7" class="numberButton" onclick="addValue('7')">
+                    <input type="button" value="8" class="numberButton" onclick="addValue('8')">
+                    <input type="button" value="9" class="numberButton" onclick="addValue('9')">
+                    <input type="button" value="+" class="functionButton" onclick="sum()">
+                </div>
+                <div class="row">
+                    <input type="button" value="4" class="numberButton" onclick="addValue('4')">
+                    <input type="button" value="5" class="numberButton" onclick="addValue('5')">
+                    <input type="button" value="6" class="numberButton" onclick="addValue('6')">
+                    <input type="button" value="-" class="functionButton" onclick="rest()">
+                </div>
+                <div class="row">
+                    <input type="button" value="1" class="numberButton" onclick="addValue('1')">
+                    <input type="button" value="2" class="numberButton" onclick="addValue('2')">
+                    <input type="button" value="3" class="numberButton" onclick="addValue('3')">
+                    <input type="button" value="*" class="functionButton" onclick="mul()">
+                </div>
+                <div class="row">
+                    <input type="button" value="." class="numberButton" onclick="addValue('.')"> 
+                    <input type="button" value="0" class="numberButton" onclick="addValue('0')">
+                    <input type="button" value="=" class="functionButton" onclick="equal()">
+                    <input type="button" value="/" class="functionButton" onclick="div()">
+                </div>
+            </div>
+            
+                <div class="historialContainer-hide" id="histContainer">
+                <div class="historialRow">
+                    <input type="textfield" class="historialContent" id="historial1" disabled="true">
+                </div>
+                <div class="historialRow">
+                    <input type="textfield" class="historialContent" id="historial2" disabled="true">
+                </div>
+                <div class="historialRow">
+                    <input type="textfield" class="historialContent" id="historial3" disabled="true">
+                </div>          
+                <div class="historialRow">
+                    <input type="textfield" class="historialContent" id="historial4" disabled="true">
+                </div>
+              <div class="historialRow">
+                    <input type="textfield" class="historialContent" id="historial5" disabled="true">
+                </div>
+                <div class="historialRow">
+                    <input type="textfield" class="historialContent" id="historial6" disabled="true">
+                </div>
+                <div class="historialRow">
+                    <input type="textfield" class="historialContent" id="historial7" disabled="true">
+                </div>
+                <div class="historialRow">
+                    <input type="textfield" class="historialContent" id="historial8" disabled="true">
+                </div>
+                <div class="historialRow">
+                    <input type="textfield" class="historialContent" id="historial9" disabled="true">   
+                </div>
+                <div class="historialRow">
+                    <input type="textfield" class="historialContent" id="historial10" disabled="true">
+                </div>
+
+
+            
+              
+
+              
+            </div>
+            </div>
+        </div>
+
+
+    </body>
+
+</html>

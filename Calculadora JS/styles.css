@@ -1,0 +1,157 @@
+.container {
+    width: 402px;
+    height: 600px;
+    position: absolute;
+    top: 50%;   
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3px;
+}
+.childContainer {
+    background-color: #1B1D51;
+    width: 302px;
+    height: 469px;
+    position: absolute;
+    top: 50%;   
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 3px 3px 20px;
+    padding: 3px;
+}
+
+
+
+
+.calcContainer-show     {
+    background-color:#272A77 ;
+
+  
+
+}
+.calcContainer-hide     {
+    background-color:#272A77 ;
+    display: none;
+    
+  
+
+}
+.historialContainer-show     {
+    background-color:#272A77 ;
+  
+
+}
+
+.historialContainer-hide     {
+    background-color:#272A77 ;
+    display: none;
+
+}
+
+
+.numberButton, .functionButton , .actionButton {
+    width: 70px;
+    height: 70px;
+    background-color: #354357;
+    border: none;
+    border-color: transparent;
+    margin: 0;
+/*  font-family:Calcula;*/
+    font-size: 30px;
+    border-radius: 5%;
+    text-align: center ;
+}
+.actionButton{
+    font-size: 20px;
+}
+
+input[type="button"]:hover {
+    
+    background-color: #6c63ff;
+
+}
+input[value="AC"]:hover {
+    
+    background-color: #354357;
+
+}
+
+
+input[value="AC"] {
+    width: 144px;
+    height: 70px;
+    background-color: #6c63ff;
+
+}
+
+.changeButton-calc{
+    width: 3rem;
+    height: 3rem;
+    background-image:url(reources/images/tiempo.png);
+    background-size: 2.29999999999999999rem;
+    background-repeat: no-repeat;
+    background-position: 75%;
+    border-radius: 100%;
+    border-color: transparent;
+    background-color: #354357;
+    padding-bottom: 10px;
+    position: absolute;
+    box-shadow: 3px 3px 20px;
+    left: 50%;
+    transform: translate(-50%, 0%   );
+}
+.changeButton-hist{
+    width: 3rem;
+    height: 3rem;
+    background-image:url(reources/images/calculadora.png);
+    background-size: 2.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border-radius: 100%;
+    border-color: transparent;
+    padding-bottom: 10px;
+    position: absolute;
+    box-shadow: 3px 3px 20px;
+    left: 50%;
+    transform: translate(-50%, 0%   );
+}
+.calcText {
+    width: 283px;
+    height: 70px;
+    font-size: 5rem;
+    font-family:Calculator;
+    display: flex;
+    text-align: right;
+}
+
+
+.historialRow {
+    width: max-content;
+    text-align: center;
+    align-items: center;
+
+}
+
+.historialContent{
+    width: 283px;
+    height: 2.03rem;
+    font-family: Calculator;
+    font-size: 3rem;
+}
+
+
+
+* {
+    padding: 2.5px;
+
+}
+
+body {
+    background-color: #15163D;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
